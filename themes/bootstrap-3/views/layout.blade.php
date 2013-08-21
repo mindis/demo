@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>@shop('meta.title')</title>
+        <title>{{ shop('meta.title') }}</title>
 
         @stylesheets('application')
     </head>
@@ -16,7 +16,7 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="brand" href="/">@shop('brand.title')</a>
+                    <a class="brand" href="/">{{ shop('brand.title') }}</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             @loop_categories()

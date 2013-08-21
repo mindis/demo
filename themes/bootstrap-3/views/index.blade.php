@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="hero-unit">
-        <h1>@shop('brand.title')</h1>
-        <p>@shop('brand.tagline')</p>
+        <h1>{{ shop('brand.title') }}</h1>
+        <p>{{ shop('brand.tagline') }}</p>
     </div>
 
     <div class="row product-list">
