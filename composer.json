@@ -1,10 +1,22 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "shopavel/demo-products",
+	"description": "Shopavel products demo",
+	"keywords": ["shopavel", "laravel"],
 	"license": "MIT",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/shopavel/core"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/shopavel/products"
+		}
+	],
 	"require": {
-		"laravel/framework": "4.0.*"
+		"laravel/framework": "4.0.*",
+		"shopavel/core": "dev-master",
+		"shopavel/products": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
