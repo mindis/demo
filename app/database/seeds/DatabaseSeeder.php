@@ -11,6 +11,13 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
+		// Call registered package seeders
+		foreach ($this->container['seeders']->getSeeders() as $seeder)
+		{
+			// dd($this->container[$seeder]);
+			$this->call($seeder);
+		}
+
 		// $this->call('UserTableSeeder');
 	}
 
