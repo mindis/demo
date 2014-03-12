@@ -4,7 +4,10 @@
 	"keywords": ["shopavel", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.1.*"
+		"laravel/framework": "4.1.*",
+		"shopavel/common": "~0",
+		"shopavel/products": "~0",
+		"shopavel/themes": "~0"
 	},
 	"autoload": {
 		"classmap": [
