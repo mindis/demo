@@ -112,6 +112,7 @@ return array(
 		'Shopavel\Products\ProductsServiceProvider',
 
 		'Basset\BassetServiceProvider',
+		'Way\Form\FormServiceProvider',
 
 	),
 

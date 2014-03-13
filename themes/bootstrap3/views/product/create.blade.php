@@ -2,7 +2,7 @@
 
 @section('content')
     {{ Form::open(['route' => 'product.store', 'method' => 'post']) }}
-        {{-- Form::name() --}}
+        {{ FormField::name() }}
         {{ Form::submit('Create Product') }}
     {{ Form::close() }}
 @stop
