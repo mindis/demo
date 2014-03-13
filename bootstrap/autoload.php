@@ -14,11 +14,13 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-$autoloader = require __DIR__.'/../vendor/autoload.php';
-
 if (is_file(__DIR__.'/local.php'))
 {
-    $autoloader = require __DIR__.'/local.php';
+    require __DIR__.'/local.php';
+}
+else
+{
+    require __DIR__.'/../vendor/autoload.php';
 }
 
 /*
