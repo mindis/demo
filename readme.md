@@ -6,4 +6,18 @@ Comprises of [products](https://github.com/shopavel/products), [categories](http
 
 ## Development
 
-To develop locally you can symlink the packages inside `workbench/shopavel/*` to your local copy of each package.
+When developing locally on multiple packages it can be useful to override the namespaces to your local copies of each package. This allows you to more easily develop and test.
+
+To do this create a `bootstrap/local.php` file like so:
+
+```php
+<?php
+
+$autoloader = require __DIR__.'/../vendor/autoload.php';
+
+$autoloader->set('Shopavel',           '/path/to/shopavel/packages/common/src');
+$autoloader->set('Shopavel\\Products', '/path/to/shopavel/packages/products/src');
+$autoloader->set('Shopavel\\Themes',   '/path/to/shopavel/packages/themes/src');
+```
+
+Add additional packages as needed, then run `composer dump-autoload`. You will now be able to checkout any branch you wish for these packages and work directly on them without needing to push and update.
