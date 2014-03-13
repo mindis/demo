@@ -3,11 +3,34 @@
 	"description": "Shopavel products demo",
 	"keywords": ["shopavel", "laravel"],
 	"license": "MIT",
+	"repositories": [
+		{
+			"url": "https://github.com/shopavel/common.git",
+			"type": "git"
+		},
+		{
+			"url": "https://github.com/shopavel/products.git",
+			"type": "git"
+		},
+		{
+			"url": "https://github.com/shopavel/themes.git",
+			"type": "git"
+		}
+	],
 	"require": {
 		"laravel/framework": "4.1.*",
-		"shopavel/common": "~0",
-		"shopavel/products": "~0",
-		"shopavel/themes": "~0"
+
+		"shopavel/common": "dev-master",
+		"shopavel/products": "dev-master",
+		"shopavel/themes": "dev-master",
+
+		"way/form": "dev-master",
+		"jasonlewis/basset": "dev-master",
+        "natxet/CssMin": "dev-master",
+        "linkorb/jsmin-php": "dev-master"
+	},
+	"require-dev": {
+		"fzaninotto/faker": "1.2.x"
 	},
 	"autoload": {
 		"classmap": [
